@@ -17,9 +17,7 @@
 		});
 	}
 
-	window.addEventListener('load',
-		init,
-		false
-	);
+	// Using setTimeout, instead of 'load' event, due to SC currently overriding its handler
+  setTimeout(init, 2000);
 })();                                                                                                                                                          
 
