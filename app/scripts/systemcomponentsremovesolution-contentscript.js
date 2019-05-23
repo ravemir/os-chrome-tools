@@ -8,6 +8,7 @@
 				" tr:contains('Platform Extensibility'),"+
 				" tr:contains('(Users)'),"+
 				" tr:contains('(App Feedback)'),"+
+        " tr:contains('(App Feedback Mobile)'),"+
 				" tr:contains('(Embedded Process Automation)'),"+
 				" tr:contains('(LifeTime)'),"+
 				" tr:contains('(LifeTimePerformanceMonitor)'),"+
