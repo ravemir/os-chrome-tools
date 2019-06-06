@@ -10,8 +10,8 @@
   "default_locale": "en",
   "background": {
     "scripts": [
-      "scripts.babel/chromereload.js",
-      "scripts.babel/background.js"
+      "scripts/chromereload.js",
+      "scripts/background.js"
     ]
   },
   "permissions": [
@@ -44,11 +44,21 @@
   "content_scripts": [
     {
       "matches": [
+	"http*://*/ServiceCenter/Solution_Edit.aspx*"
+      ],
+      "js": [
+        "scripts/systemcomponentsremovesolution-contentscript.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    },
+    {
+      "matches": [
         "http://*/*",
         "https://*/*"
       ],
       "js": [
-        "scripts.babel/contentscript.js"
+        "scripts/autoscroll-contentscript.js"
       ],
       "run_at": "document_end",
       "all_frames": false
