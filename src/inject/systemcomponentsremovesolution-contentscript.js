@@ -2,7 +2,11 @@
 	'use strict';
 
 	console.log("initializing extension")
-
+	function isRedesignedSC(){
+	        // due to a lack of an official way to determine if the current SC is
+	        // redesigned or not, we're relying on the "sc-layout" class being present
+	        return document.querySelectorAll(".sc-layout").length > 0;
+	}
 	function checkAllSystemModules(){
 		// Check all system modules, by clicking their checkboxes
 		$("table[class='TableRecords']")
