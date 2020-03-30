@@ -24,11 +24,6 @@
 			statusTable = '#wtTable2'
 		}
 
-		if(statusTable <= 0){
-			console.log("auto-scroll failed to initialize")
-			return;
-		}
-
 		observer.observe(document.querySelector(statusTable), {
 			subtree: true,
 			attributes: true
