@@ -17,7 +17,19 @@
 		var observer = new MutationObserver(function(mutations, observer) {
 			scrollToBottom();
 		});
-		observer.observe(document.querySelector('#wtTable2'), {
+		var statusTable = '';
+		if(isRedesignedSC()){
+			// yet to implement
+		} else {
+			statusTable = '#wtTable2'
+		}
+
+		if(statusTable <= 0){
+			console.log("auto-scroll failed to initialize")
+			return;
+		}
+
+		observer.observe(document.querySelector(statusTable), {
 			subtree: true,
 			attributes: true
 		});
