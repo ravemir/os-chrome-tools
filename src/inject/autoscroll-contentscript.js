@@ -19,7 +19,7 @@
 		});
 		var statusTable = '';
 		if(isRedesignedSC()){
-			// yet to implement
+			statusTable = '#MessagesTable'
 		} else {
 			statusTable = '#wtTable2'
 		}
